@@ -4,7 +4,7 @@
 
 /* FONTS */
 
-@import url(../vendor/fonts.css);
+@import url(../vendor/fonts/fonts.css);
 @import url(../vendor/normalize.css);
 
 /* HEADER */
@@ -20,9 +20,15 @@
 
 
 
+/* PROFILE */
 
-
-
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/profile/__avatar/profile__avatar.css);
+@import url(../blocks/profile/__addButton/profile__addButton.css);
+@import url(../blocks/profile-info/profile-info.css);
+@import url(../blocks/profile-info/__post/profile-info__post.css);
+@import url(../blocks/profile-info/__name/profile-info__name.css);
+@import url(../blocks/profile-info/__edit/profile-info__edit.css);
 
 
 

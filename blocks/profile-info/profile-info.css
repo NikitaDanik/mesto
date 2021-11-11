@@ -1,0 +1,9 @@
+.profile-info {
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: fit-content(294px) fit-content(25px);
+    /* grid-template-rows: fit-content(39px) fit-content(18px); */
+    column-gap: 18px;
+    row-gap: 9px;
+    align-content: center;    
+}

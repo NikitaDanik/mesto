@@ -1,0 +1,11 @@
+.profile-info__post {
+    margin: 0;
+    grid-row: 2/3;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
