@@ -1,0 +1,15 @@
+.elements__like {
+    width: 22px;
+    height: 19px;
+    align-self: flex-start;
+    padding: 0;
+    margin-right: 5.5px;
+    margin-top: 6.5px;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    background-image: url(../../../images/heart.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: rgba(0, 0, 0, 1);
+}

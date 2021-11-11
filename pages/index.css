@@ -13,12 +13,9 @@
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__line/header__line.css);
 
-
 /* CONTENT */
 
 @import url(../blocks/content/content.css);
-
-
 
 /* PROFILE */
 
@@ -30,20 +27,15 @@
 @import url(../blocks/profile-info/__name/profile-info__name.css);
 @import url(../blocks/profile-info/__edit/profile-info__edit.css);
 
+/* ELEMENTS */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+@import url(../blocks/elements/elements.css);
+@import url(../blocks/elements/__text/elements__text.css);
+@import url(../blocks/elements/__like/elements__like.css);
+@import url(../blocks/elements/__image/elements__image.css);
+@import url(../blocks/elements/__cards/elements__cards.css);
+@import url(../blocks/elements/__card/elements__card.css);
+@import url(../blocks/elements/__caption/elements__caption.css);
 
 /*FOOTER*/
 
