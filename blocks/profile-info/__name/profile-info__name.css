@@ -10,3 +10,19 @@
     white-space: nowrap;
     overflow: hidden;    
 }
+
+@media screen and (max-width: 979px){
+    .profile-info__name {
+        font-weight: 500;
+        font-size: 27px;
+        line-height: 33px;
+    }
+    }
+    
+    @media screen and (max-width: 1279px){
+    .profile-info__name {
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 41px;
+    }
+    }
