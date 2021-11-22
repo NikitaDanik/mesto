@@ -1,93 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pages/index.css">
-    <title>Mesto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="./pages/index.css">
 </head>
+
 <body class="page">
 
-    <header class="header">
-        <img src="images/Vector.png" class="header__logo" alt="Логотип">
-        <div class="header__line"></div>
-    </header>
+  <header class="header">
+    <div class="header__logo"></div>
+  </header>
 
-    <main class="content">
+  <div class="wrapper">    
 
-        <section class="profile">
-            <img src="images/jak.jpg" class="profile__avatar" alt="Фото">
-            <div class="profile-info">
-                <h1 class="profile-info__name">Жак-Ив Кусто</h1>
-                <button class="profile-info__edit"></button>
-                <h3 class="profile-info__post">Исследователь океана</h3>
+    <main class="main">
+      <section class="profile">
+        <img src="./images/Profile/user.jpg" alt="фото" class="profile__avatar">
+        <div class="profile-info">
+          <h1 class="profile-info__fullname">Жак-Ив Кусто</h1>
+          <button type="button" class="profile-info__edit"></button>
+          <p class="profile-info__job">Исследователь океана</p>
+        </div>
+        <button type="button" class="profile__add"></button>
+      </section>
+
+      <section class="elements">
+        <ul class="elements__cards">
+          <li class="elements__card">
+            <img src="./images/karachaevsk.jpg" alt="картинка" class="elements__image">
+            <div class="elements__caption">
+              <h2 class="elements__text">Карачаевск</h2>
+              <button type="button" class="elements__like"></button>             
             </div>
-
-            <button class="profile__addButton">
-                <img src="images/plus.png" class="profile__button-plus" alt="Плюс">
-            </button>
-        </section>
-
-        <!-- <section class="elements">
-
-            <ul class="elements__cards">
-
-                <li class="elements__card">
-                  <img src="./images/karachaevsk.jpg" alt="Фото пользователя" class="elements__image">
-                  <div class="elements__caption">
-                    <h2 class="elements__text">Карачаевск</h2>
-                    <button class="elements__like"></button>
-                  </div>
-                </li>
-
-                <li class="elements__card">
-                    <img src="./images/elbrus.png" alt="Фото пользователя" class="elements__image">
-                    <div class="elements__caption">
-                      <h2 class="elements__text">Гора Эльбрус</h2>
-                      <button class="elements__like"></button>
-                    </div>
-                  </li>
-
-                  <li class="elements__card">
-                    <img src="./images/dombai.png" alt="Фото пользователя" class="elements__image">
-                    <div class="elements__caption">
-                      <h2 class="elements__text">Дамбай</h2>
-                      <button class="elements__like"></button>
-                    </div>
-                  </li>
-
-                  <li class="elements__card">
-                    <img src="./images/daniel-sessler.jpg" alt="Фото пользователя" class="elements__image">
-                    <div class="elements__caption">
-                      <h2 class="elements__text">Озеро зимой во льду</h2>
-                      <button class="elements__like"></button>
-                    </div>
-                  </li>
-
-                  <li class="elements__card">
-                    <img src="./images/kevin-jiner.jpg" alt="Фото пользователя" class="elements__image">
-                    <div class="elements__caption">
-                      <h2 class="elements__text">Рассвет над горной местностью</h2>
-                      <button class="elements__like"></button>
-                    </div>
-                  </li>
-
-                  <li class="elements__card">
-                    <img src="./images/neil-bate.jpg" alt="Фото пользователя" class="elements__image">
-                    <div class="elements__caption">
-                      <h2 class="elements__text">Зимние вершины</h2>
-                      <button class="elements__like"></button>
-                    </div>
-                  </li>
-
-                </ul>
-
-        </section>
-
+          </li>
+          <li class="elements__card">
+            <img src="./images/elbrus.jpg" alt="картинка" class="elements__image">
+            <div class="elements__caption">
+              <h2 class="elements__text">Гора Эльбрус</h2>
+              <button type="button" class="elements__like"></button>   
+            </div>
+          </li>
+          <li class="elements__card">
+            <img src="./images/dombay.jpg" alt="картинка" class="elements__image">
+            <div class="elements__caption">
+              <h2 class="elements__text">Домбай</h2>
+              <button type="button" class="elements__like"></button>
+            </div>
+          </li>
+          <li class="elements__card">
+            <img src="./images/daniel-sessler.jpg" alt="картинка" class="elements__image">
+            <div class="elements__caption">
+              <h2 class="elements__text">Озеро зимой во льду</h2>
+              <button type="button" class="elements__like"></button>
+            </div>
+          </li>
+          <li class="elements__card">
+            <img src="./images/kevin-jiner.jpg" alt="картинка" class="elements__image">
+            <div class="elements__caption">
+              <h2 class="elements__text">Рассвет над горной местностью</h2>
+              <button type="button" class="elements__like"></button>
+            </div>
+          </li>
+          <li class="elements__card">
+            <img src="./images/neil-bate.jpg" alt="картинка" class="elements__image">
+            <div class="elements__caption">
+              <h2 class="elements__text">Зимние вершины</h2>
+              <button type="button" class="elements__like"></button>
+            </div>
+          </li>
+        </ul>
+      </section>
     </main>
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2020 Mesto Russia | Никита Даник</p>
+    </footer>
+  </div>
+  <div class="popup">
+    <div class="popup__content">
+      <button type="button" class="popup__close"></button>
+      <h2 class="popup__title">Редактировать профиль</h2>
+      <form class="form">
+        <input name="title" placeholder="Жак-Ив Кусто" class="popup__text form__input form__input_name">
+        <input name="job" placeholder="Исследователь океана" class="popup__text form__input form__input_job">
+        <button type="submit" class="form__save">Сохранить</button>
+      </form>
+    </div>
 
-    <footer class="footer"> &copy;2021. Mesto Russia</footer>  -->
+  </div>
+  <script src="./scripts/index.js"></script>
 
 </body>
+
 </html>
