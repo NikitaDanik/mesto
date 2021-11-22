@@ -1,0 +1,33 @@
+@keyframes open {
+    0% {
+        transform: perspective(600px) translate(0px, -550px) rotateX(45deg);
+    }
+    100% {
+        transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
+    }
+}
+
+.popup__content {
+    padding: 34px 36px 37px;
+    box-sizing: border-box;
+    background: white;
+    width: 430px;
+    height: 330px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.popup_open .popup__content {
+    animation: open .4s;
+}
+
+@media screen and (max-width: 450px) {
+    .popup__content {
+        padding: 25px 22px 25px 22px;
+        width: 282px;
+        height: 322px;
+    }
+}

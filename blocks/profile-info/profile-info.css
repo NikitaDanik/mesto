@@ -1,10 +1,18 @@
 .profile-info {
-    flex-grow: 2;
     margin-left: 30px;
     display: grid;
+    flex-grow: 2;
     grid-template-columns: fit-content(294px) fit-content(25px);
     column-gap: 19px;
     row-gap: 9px;
     align-content: center;
 }
 
+@media screen and (max-width: 780px) {
+    .profile-info {
+        margin: 26px 14px 0 45px;
+        grid-template-columns: fit-content(189px) 23px;
+        column-gap: 9px;
+        row-gap: 7px;
+    }
+}

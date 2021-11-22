@@ -1,15 +1,15 @@
 .profile {
-    padding-top: 52px;
+    padding-top: 30px;
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
 }
 
 @media screen and (max-width: 780px) {
-.profile {
-    padding-top: 42px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .profile {
+        padding-top: 42px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

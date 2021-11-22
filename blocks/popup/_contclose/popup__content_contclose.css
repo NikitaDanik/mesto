@@ -1,0 +1,12 @@
+@keyframes hide {
+    0% {
+        transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
+    }
+    100% {
+        transform: perspective(600px) translate(0px, -550px) rotateX(45deg);
+    }
+}
+
+.popup__content_contclose {
+    animation: hide .4s;
+}

@@ -1,0 +1,28 @@
+.profile-info__edit {
+    width: 24px;
+    height: 24px;
+    background-image: url(../../../images/Icons/edit_button.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    border: 1px solid rgba(255, 255, 255, 1);
+    padding: 0;
+    margin: 7px 0 0 0;
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    cursor: pointer;
+    transition: opacity .2s ease-in-out;
+}
+
+.profile-info__edit:hover {
+    opacity: .6;
+}
+
+@media screen and (max-width: 321px) {
+    .profile-info__edit {
+        width: 18px;
+        height: 18px;
+        margin: 0 0 0 1.5px;
+    }
+}

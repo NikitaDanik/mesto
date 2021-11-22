@@ -1,15 +1,20 @@
 .elements__like {
-    margin-right: 5.5px;
-    margin-top: 6.5px;
+    padding: 0;
+    margin-right: 5px;
+    margin-top: 4.5px;
     width: 22px;
     height: 19px;
-    align-self: flex-start;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    background: none;
-    background-image: url(../../../images/heart.svg);
+    background-image: url(../../../images/Icons/like.svg);
+    background-color: #FFFFFF;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+    align-self: flex-start;
+    border: none;
     color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+    transition: opacity .2s ease-in-out;
+}
+
+.elements__like:hover {
+    opacity: .5;
 }

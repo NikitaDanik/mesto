@@ -1,6 +1,3 @@
 .footer {
-    width: 318px;
-    margin: 66px 200px;
-    box-sizing: border-box;
-    color: #545454;
+    grid-area: footer;
 }
