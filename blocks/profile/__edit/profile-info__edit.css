@@ -4,8 +4,7 @@
     background-image: url(../../../images/Icons/edit_button.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: black;
-    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0);
     padding: 0;
     margin: 7px 0 0 0;
     align-self: center;

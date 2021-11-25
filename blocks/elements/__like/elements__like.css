@@ -5,7 +5,7 @@
     width: 22px;
     height: 19px;
     background-image: url(../../../images/Icons/like.svg);
-    background-color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0);
     background-repeat: no-repeat;
     background-size: cover;
     align-self: flex-start;

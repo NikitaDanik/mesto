@@ -12,7 +12,6 @@
 
 @media screen and (max-width: 979px) {
     .profile-info__job {
-        font-weight: 400;
         font-size: 14px;
         line-height: 17px;
         text-align: center;

@@ -14,19 +14,11 @@
 		justify-content: center;
 		grid-template: 328px auto / 100%;
 		row-gap: 36px;
-		grid-template-areas:
-		"profile"
-		"elements";
 	}
 }
 
 @media screen and (max-width: 450px) {
 	.main {
-		justify-content: center;
 		grid-template: 328px auto / 282px;
-		row-gap: 36px;
-		grid-template-areas:
-		"profile"
-		"elements";
 	}
 }
