@@ -1,4 +1,4 @@
-.profile-info {
+.profile__info {
     margin-left: 30px;
     display: grid;
     flex-grow: 2;
@@ -9,7 +9,7 @@
 }
 
 @media screen and (max-width: 780px) {
-    .profile-info {
+    .profile__info {
         margin: 26px 14px 0 45px;
         grid-template-columns: fit-content(189px) 23px;
         column-gap: 9px;
