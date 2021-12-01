@@ -9,7 +9,6 @@ let nameUser = document.querySelector('.profile__fullname');
 let jobUser = document.querySelector('.profile__job');
 
 function openPopup() {
-    contentBlock.classList.remove('popup__content_contclose');
     popupBlock.classList.add('popup_open');
     nameInput.value = nameUser.textContent;
     jobInput.value = jobUser.textContent;
@@ -17,7 +16,6 @@ function openPopup() {
 
 function closePopup() {
     popupBlock.classList.remove('popup_open');
-    contentBlock.classList.add('popup__content_contclose');    
 }
 
 function submitFormHandler(evt) {
