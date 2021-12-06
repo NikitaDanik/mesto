@@ -2,29 +2,37 @@ const buttonOpenPopup = document.querySelector('.profile__edit');
 const buttonClosePopup = document.querySelector('.popup__close');
 const popupBlock = document.querySelector('.popup');
 const contentBlock = document.querySelector('.popup__content');
+
+const buttonOpenPopupSecond = document.querySelector('.profile__add');
+
 let formElement = document.querySelector('.form');
 let nameInput = formElement.querySelector('.form__input_type_name'); 
 let jobInput = formElement.querySelector('.form__input_type_job');
 let nameUser = document.querySelector('.profile__fullname');
 let jobUser = document.querySelector('.profile__job');
 
-function openPopup() {
-    popupBlock.classList.add('popup_open');
+// единая функция открытия popups
+function openPopup(popup_profile) {  // передаем функции аргумент - тип попапа (у меня он называется popupTypeOpen), который будем открывать
+    popupTypeOpen.classList.add('popup_open');  //добавляем селектор открытия к нашему типу попапа
+}
+// единая функция закрытия popups  // то же самое для закрытия всех попапов
+function closePopup(popup_place) {
+    popupTypeClose.classList.remove('popup_open');
+}
+// --------   тип нужного нам попапа вешаем на обработчик событий ------------- //
+// прописать открытие popupProfile
+buttonOpenPopupProfile.addEventListener('click', () => {
     nameInput.value = nameUser.textContent;
     jobInput.value = jobUser.textContent;
-}
-
-function closePopup() {
-    popupBlock.classList.remove('popup_open');
-}
-
-function submitFormHandler(evt) {
-    evt.preventDefault();    
-    nameUser.textContent = nameInput.value;
-    jobUser.textContent = jobInput.value;
-    closePopup();
-}
-
-buttonOpenPopup.addEventListener('click', openPopup);
-buttonClosePopup.addEventListener('click', closePopup);
-formElement.addEventListener('submit', submitFormHandler);
+    openPopup(popupProfile);  // тут указывает в скобках тот тип попапа который будет открыт, т.е. popupTypeOpen = popupProfile.
+});
+// прописать открытие popupGrid
+buttonOpenPopupGrid.addEventListener('click', () => {
+    titleInputPlace.value = '';
+    linkInputPlace.value = '';
+    openPopup(popupPlace);
+});
+// прописать закрытие popupS
+buttonClosePopupProfile.addEventListener('click', () => closePopup(popupProfile)); // тут то же самое, в скобках указывает тот попап, которы будет передаваться в popupTypeOpen
+buttonClosePopupPlace.addEventListener('click', () => closePopup(popupPlace));
+buttonClosePopupImage.addEventListener('click', () => closePopup(popupImage));
