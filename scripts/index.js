@@ -3,8 +3,8 @@ const buttonClosePopup = document.querySelector('.popup__close');
 const popupBlock = document.querySelector('.popup');
 const contentBlock = document.querySelector('.popup__content');
 
-const buttonOpenPopupProfile = document.querySelector('.popup_profile');
-const buttonOpenPopupPlace = document.querySelector('.popup_place');
+const buttonOpenPopupProfile = document.querySelector('.profile__edit');
+const buttonOpenPopupPlace = document.querySelector('.profile__add');
 
 
 let formElement = document.querySelector('.form');
