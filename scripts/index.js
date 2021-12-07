@@ -101,9 +101,28 @@ function submitPlaceHandler(evt) {
         name: titleInputPlace.value
     });
     userCards.prepend(newCard);
-    linkInputPlace.value = '';
+    linkInputPlace.value = '',
     titleInputPlace.value = '';
     closePopup(popupPlace);
 }
 
 loadPhoto();
+
+buttonOpenPopupProfile.addEventListener('click', () => {
+    nameInput.value = userName.textContent;
+    jobInput.value = jobInput.textContent;
+    openPopup(popupProfile);
+});
+
+buttonClosePopupPlace.addEventListener('click', () => {
+    titleInputPlace.value = '';
+    linkInputPlace.value = '';
+    openPopup(popupPlace);
+});
+
+buttonClosePopupProfile.addEventListener('click', () => closePopup(popupProfile));
+buttonClosePopupPlace.addEventListener('click', () => closePopup(popupPlace));
+buttonClosePopupImage.addEventListener('click', () => closePopup(popupImage));
+
+formPopupProfile.addEventListener('submit', submitProfileHandler);
+formPopupPlace.addEventListener('submit', submitProfileHandler);
