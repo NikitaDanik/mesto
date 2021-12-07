@@ -52,10 +52,10 @@ const initialCards = [
   ]; 
 
 function loadPhoto() {
-    const arrayPhotoElements = initialCards.map((item) =>{
+    const arrPhotoElements = initialCards.map((item) => {
         return createList(item);
     });
-    userCards.append(...arrayPhotoElements);
+    usersCards.append(...arrPhotoElements);
 }
 
 function createList(item) {
@@ -106,5 +106,4 @@ function submitPlaceHandler(evt) {
     closePopup(popupPlace);
 }
 
-updatePhoto();
-
+loadPhoto();
