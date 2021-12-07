@@ -85,8 +85,8 @@
       <button type="button" class="popup__close"></button>
       <h2 class="popup__title">Редактировать профиль</h2>
       <form class="form form_profile" name="form">
-        <input name="title" placeholder="Никита Даник" class="popup__text form__input form__input_type_name">
-        <input name="job" placeholder="Ученик ЯндексПрактикум" class="popup__text form__input form__input_type_job">
+        <input id="name" name="name" placeholder="Жак-Ив Кусто" class="popup__text form__input">
+        <input id="job" name="job" placeholder="Исследователь океана" class="popup__text form__input">
         <button type="submit" class="form__save">Сохранить</button>
       </form>
     </div>
@@ -96,9 +96,9 @@
         <div class="popup__content">
           <button type="button" class="popup__close"></button>
           <h2 class="popup__title">Новое место</h2>
-          <form class="form form_grid" name="form">
-            <input name="title" placeholder="Название" class="popup__text form__input form__input_type_title">
-            <input name="link" placeholder="Ссылка на картинку" class="popup__text form__input form__input_type_link">
+          <form class="form form_place">
+            <input id= "title" name="title" placeholder="Название" class="popup__text form__input">
+            <input id= "link" name="link" placeholder="Ссылка на картинку" class="popup__text form__input">
             <button type="submit" class="form__save">Создать</button>
           </form>
         </div>
@@ -111,6 +111,17 @@
           <button type="button" class="popup__close"></button>
       </figure>
   </div>
+
+  <template id="add-elements">
+    <li class="elements__card">
+      <img class="elements__image">
+      <div class="elements__caption">
+        <h2 class="elements__text"></h2>
+        <button type="button" class="elements__button elements_button_like"></button>
+      </div>
+      <button type="button" class="elements__button elements_button_trash"></button>
+    </li>
+  </template>
 
 
 </body>
