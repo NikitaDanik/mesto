@@ -1,4 +1,5 @@
 // Записать все значения в переменные 
+
 const popups = document.querySelectorAll('.popup');
 const userName = document.querySelector('.profile__fullname');
 const UserJob = document.querySelector('.profile__job');
@@ -20,3 +21,32 @@ const image = popupImage.querySelector('.popup__image');
 const figcaption = popupImage.querySelector('.popup__figcaption');
 const userTemplate = document.querySelector('#add-elements').content;
 const userCards = document.querySelector('.elements__cards');
+
+// Записать фото при загрузке в массив
+
+const initialCards = [
+    {
+      name: 'Архыз',
+      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
+    },
+    {
+      name: 'Челябинская область',
+      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
+    },
+    {
+      name: 'Иваново',
+      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
+    },
+    {
+      name: 'Камчатка',
+      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
+    },
+    {
+      name: 'Холмогорский район',
+      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
+    },
+    {
+      name: 'Байкал',
+      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
+    }
+  ]; 
