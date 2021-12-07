@@ -57,3 +57,24 @@ function loadPhoto() {
     });
     userCards.append(...arrayPhotoElements);
 }
+
+function createList(item) {
+    const newCard = userTemplate.cloneNode(true);
+    newCard.querySelector('.elements__image').src = item.link;
+    newCard.querySelector('.elements__image').src = item.name;
+    newCard.querySelector('.elements__text').textContent = item.name;
+    newCard.querySelector('.elements__button_trash').addEventListener('click', (e) => {
+        e.target.closest('.elements__card').remove();
+    });
+    newCard.querySelector('.elements_button_like').addEventListener('click', (e) => {
+        e.target.classList.toggle('elements_button_black');
+    });
+    newCard.querySelector('.elements__image').addEventListener('click', () => {
+        image.src = item.link;
+        image.alt = item.name;
+        figcaption.textContent = item.name;    
+        openPopup(popupImage);
+        });
+    
+        return newCard;     
+}
