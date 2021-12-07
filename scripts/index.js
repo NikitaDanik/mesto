@@ -78,3 +78,33 @@ function createList(item) {
     
         return newCard;     
 }
+
+function openPopup(popupTypeOpen) {
+    popupTypeOpen.classList.add('popup_open');
+}
+
+function closePopup(popupTypeClose) {
+    popupTypeClose.classList.remove('popup_open')
+}
+
+function submitProfileHandler(evt) {
+    evt.preventDefault();
+    userName.textContent = nameInput.value = '';
+    UserJob.textContent = jobInput.value = '';
+    closePopup(popupProfile);
+}
+
+function submitPlaceHandler(evt) {
+    evt.preventDefault();
+    const newCard = createList({
+        link: linkInputPlace.value,
+        name: titleInputPlace.value
+    });
+    userCards.prepend(newCard);
+    linkInputPlace.value = '';
+    titleInputPlace.value = '';
+    closePopup(popupPlace);
+}
+
+updatePhoto();
+
