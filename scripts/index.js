@@ -114,7 +114,7 @@ buttonOpenPopupProfile.addEventListener('click', () => {
     openPopup(popupProfile);
 });
 
-buttonClosePopupPlace.addEventListener('click', () => {
+buttonOpenPopupPlace.addEventListener('click', () => {
     titleInputPlace.value = '';
     linkInputPlace.value = '';
     openPopup(popupPlace);
@@ -125,4 +125,4 @@ buttonClosePopupPlace.addEventListener('click', () => closePopup(popupPlace));
 buttonClosePopupImage.addEventListener('click', () => closePopup(popupImage));
 
 formPopupProfile.addEventListener('submit', submitProfileHandler);
-formPopupPlace.addEventListener('submit', submitProfileHandler);
+formPopupPlace.addEventListener('submit', submitPlaceHandler);
