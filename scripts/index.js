@@ -60,8 +60,9 @@ const initialCards = [
 
 function createList(item) {
     const newCard = userTemplate.cloneNode(true);
-    newCard.querySelector('.elements__image').src = item.link;
-    newCard.querySelector('.elements__image').alt = item.name;
+    const cardImage = newCard.querySelector('.elements__image');
+    cardImage.src = item.link;
+    cardImage.alt = item.name;
     newCard.querySelector('.elements__text').textContent = item.name; 
     newCard.querySelector('.elements_button_trash').addEventListener('click', (e) => {
     e.target.closest('.elements__card').remove();
@@ -88,8 +89,8 @@ function closePopup(popupTypeClose) {
 
 function submitProfileHandler(evt) {
     evt.preventDefault();
-    userName.textContent = nameInput.value = '';
-    userJob.textContent = jobInput.value = '';
+    userName.textContent = nameInput.value;
+    userJob.textContent = jobInput.value;
     closePopup(popupProfile);
 }
 
@@ -100,7 +101,6 @@ function submitPlaceHandler(evt) {
         name: titleInputPlace.value
     });
     userCards.prepend(newCard);
-    linkInputPlace.value = '',
     titleInputPlace.value = '';
     closePopup(popupPlace);
 }
