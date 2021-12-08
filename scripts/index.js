@@ -2,7 +2,7 @@
 
 const popups = document.querySelectorAll('.popup');
 const userName = document.querySelector('.profile__fullname');
-const UserJob = document.querySelector('.profile__job');
+const userJob = document.querySelector('.profile__job');
 const popupProfile = document.querySelector('.popup_profile');
 const buttonOpenPopupProfile = document.querySelector('.profile__edit');
 const buttonClosePopupProfile = popupProfile.querySelector('.popup__close');
@@ -61,22 +61,22 @@ const initialCards = [
 function createList(item) {
     const newCard = userTemplate.cloneNode(true);
     newCard.querySelector('.elements__image').src = item.link;
-    newCard.querySelector('.elements__image').src = item.name;
-    newCard.querySelector('.elements__text').textContent = item.name;
+    newCard.querySelector('.elements__image').alt = item.name;
+    newCard.querySelector('.elements__text').textContent = item.name; 
     newCard.querySelector('.elements_button_trash').addEventListener('click', (e) => {
-        e.target.closest('.elements__card').remove();
+    e.target.closest('.elements__card').remove();
     });
     newCard.querySelector('.elements_button_like').addEventListener('click', (e) => {
         e.target.classList.toggle('elements_button_black');
     });
     newCard.querySelector('.elements__image').addEventListener('click', () => {
-        image.src = item.link;
-        image.alt = item.name;
-        figcaption.textContent = item.name;    
-        openPopup(popupImage);
-        });
-    
-        return newCard;     
+    image.src = item.link;
+    image.alt = item.name;
+    figcaption.textContent = item.name;    
+    openPopup(popupImage);
+    });
+
+    return newCard;        
 }
 
 function openPopup(popupTypeOpen) {
@@ -84,13 +84,13 @@ function openPopup(popupTypeOpen) {
 }
 
 function closePopup(popupTypeClose) {
-    popupTypeClose.classList.remove('popup_open')
+    popupTypeClose.classList.remove('popup_open');
 }
 
 function submitProfileHandler(evt) {
     evt.preventDefault();
     userName.textContent = nameInput.value = '';
-    UserJob.textContent = jobInput.value = '';
+    userJob.textContent = jobInput.value = '';
     closePopup(popupProfile);
 }
 
