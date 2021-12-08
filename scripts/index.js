@@ -51,11 +51,11 @@ const initialCards = [
     }
   ]; 
 
-function loadPhoto() {
-    const arrPhotoElements = initialCards.map((item) => {
+  function updatePhoto() {
+    const arrPhotoElements = initialCards.map((item) => {       
         return createList(item);
     });
-    usersCards.append(...arrPhotoElements);
+    userCards.append(...arrPhotoElements);
 }
 
 function createList(item) {
@@ -63,7 +63,7 @@ function createList(item) {
     newCard.querySelector('.elements__image').src = item.link;
     newCard.querySelector('.elements__image').src = item.name;
     newCard.querySelector('.elements__text').textContent = item.name;
-    newCard.querySelector('.elements__button_trash').addEventListener('click', (e) => {
+    newCard.querySelector('.elements_button_trash').addEventListener('click', (e) => {
         e.target.closest('.elements__card').remove();
     });
     newCard.querySelector('.elements_button_like').addEventListener('click', (e) => {
@@ -106,7 +106,7 @@ function submitPlaceHandler(evt) {
     closePopup(popupPlace);
 }
 
-loadPhoto();
+updatePhoto();
 
 buttonOpenPopupProfile.addEventListener('click', () => {
     nameInput.value = userName.textContent;
