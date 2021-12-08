@@ -78,7 +78,6 @@ function createList(item) {
 
     return newCard;        
 }
-
 function openPopup(popupTypeOpen) {
     popupTypeOpen.classList.add('popup_open');
 }
@@ -123,6 +122,5 @@ buttonOpenPopupPlace.addEventListener('click', () => {
 buttonClosePopupProfile.addEventListener('click', () => closePopup(popupProfile));
 buttonClosePopupPlace.addEventListener('click', () => closePopup(popupPlace));
 buttonClosePopupImage.addEventListener('click', () => closePopup(popupImage));
-
 formPopupProfile.addEventListener('submit', submitProfileHandler);
 formPopupPlace.addEventListener('submit', submitPlaceHandler);
