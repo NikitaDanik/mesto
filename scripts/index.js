@@ -51,7 +51,7 @@ const initialCards = [
     }
   ]; 
 
-  function updatePhoto() {
+  function loadPhoto() {
     const arrPhotoElements = initialCards.map((item) => {       
         return createList(item);
     });
@@ -106,7 +106,7 @@ function submitPlaceHandler(evt) {
     closePopup(popupPlace);
 }
 
-updatePhoto();
+loadPhoto();
 
 buttonOpenPopupProfile.addEventListener('click', () => {
     nameInput.value = userName.textContent;
