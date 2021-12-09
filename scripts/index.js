@@ -70,7 +70,7 @@ function createList(item) {
     newCard.querySelector('.elements_button_like').addEventListener('click', (e) => {
         e.target.classList.toggle('elements_button_black');
     });
-    newCard.querySelector('.elements__image').addEventListener('click', () => {
+    cardImage.addEventListener('click', () => {
     image.src = item.link;
     image.alt = item.name;
     figcaption.textContent = item.name;    
@@ -101,7 +101,6 @@ function submitPlaceHandler(evt) {
         name: titleInputPlace.value
     });
     userCards.prepend(newCard);
-    titleInputPlace.value = '';
     closePopup(popupPlace);
 }
 
