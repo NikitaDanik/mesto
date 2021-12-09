@@ -61,13 +61,17 @@ const initialCards = [
 function createList(item) {
     const newCard = userTemplate.cloneNode(true);
     const cardImage = newCard.querySelector('.elements__image');
+    const textElement = newCard.querySelector('.elements__text');
+    const elementsButtonTrash = newCard.querySelector('.elements_button_trash');
+    const elementsButtonLike = newCard.querySelector('.elements_button_like');
+    
     cardImage.src = item.link;
     cardImage.alt = item.name;
-    newCard.querySelector('.elements__text').textContent = item.name; 
-    newCard.querySelector('.elements_button_trash').addEventListener('click', (e) => {
+    textElement.textContent = item.name; 
+    elementsButtonTrash.addEventListener('click', (e) => {
     e.target.closest('.elements__card').remove();
     });
-    newCard.querySelector('.elements_button_like').addEventListener('click', (e) => {
+    elementsButtonLike.addEventListener('click', (e) => {
         e.target.classList.toggle('elements_button_black');
     });
     cardImage.addEventListener('click', () => {
