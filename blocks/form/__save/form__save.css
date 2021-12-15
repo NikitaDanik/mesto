@@ -1,15 +1,16 @@
 .form__save {
+    margin-top: 14px;
     padding: 0;
-    height: 50px;
-    border: none;
-    border-radius: 2px;
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
+    cursor: pointer;
+    height: 50px;
     background: rgba(0, 0, 0, 1);
     color: rgba(255, 255, 255, 1);
-    cursor: pointer;
+    border: none;
+    border-radius: 2px;
     transition: opacity .2s ease-in-out;
 }
 
