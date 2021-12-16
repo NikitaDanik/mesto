@@ -6,14 +6,14 @@ const checkInputValidity = (formElement, inputElement, inputErrorClass, errorCla
     }
 }
 
-const hideInputError = (formElement, inputElement, errorClass, inputErrorClass) => {
+const hideInputError = (formElement, inputElement, inputErrorClass, errorClass) => {
     const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
     inputElement.classList.remove(inputErrorClass);
     errorElement.classList.remove(errorClass);
     errorElement.textContent = '';
 }
 
-const showInputError = (formElement, inputElement, errorMessage, errorClass, inputErrorClass) => {
+const showInputError = (formElement, inputElement, errorMessage, inputErrorClass, errorClass) => {
     const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
     inputElement.classList.add(inputErrorClass);
     errorElement.classList.add(errorClass);

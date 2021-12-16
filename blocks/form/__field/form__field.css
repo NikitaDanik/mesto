@@ -1,0 +1,8 @@
+.form__field {
+
+    position: relative;
+}
+
+.form__field:nth-of-type(2n) {
+    margin-bottom: 36.51px;
+}
