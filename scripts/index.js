@@ -93,7 +93,7 @@ function openPopup(popupTypeOpen) {
 
 function closePopup(popupTypeClose) {
     popupTypeClose.classList.remove('popup_open');
-    document.addEventListener('keydown', closeByEsc);
+    document.removeEventListener('keydown', closeByEsc);
 }
 
 function closeByEsc(e) {
