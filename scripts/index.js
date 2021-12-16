@@ -138,7 +138,7 @@ popups.forEach((popup) => {
 
 buttonOpenPopupProfile.addEventListener('click', () => {
     nameInput.value = userName.textContent;
-    jobInput.value = jobInput.textContent;
+    jobInput.value = userJob.textContent;
     openPopup(popupProfile);
 });
 
