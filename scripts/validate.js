@@ -1,4 +1,4 @@
-const checkInputValidity = (formElement, inputElement, errorClass, inputErrorClass) => {
+const checkInputValidity = (formElement, inputElement, inputErrorClass, errorClass) => {
     if (inputElement.validity.valid) {
         hideInputError(formElement, inputElement, inputErrorClass, errorClass);
     } else {
